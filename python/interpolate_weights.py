@@ -35,7 +35,7 @@ if __name__ == '__main__':
     channel_info[:,2] = normalize(channel_info[:,2])
 
     # Add corner points with channel_id -1, to cover the whole grid in [0,1]x[0,1]
-    channel_info = np.vstack((channel_info, [[-1, -0.001, -0.001], [-1, -0.001, 1.001], [-1, 1.001, -0.001], [-1, 1.001, 1.001]]))
+    channel_info = np.vstack((channel_info, [[-1, -0.001, -0.001], [-2, -0.001, 1.001], [-3, 1.001, -0.001], [-4, 1.001, 1.001]]))
 
     xi = np.linspace(0, 1, image_width)
     yi = np.linspace(0, 1, image_height)
